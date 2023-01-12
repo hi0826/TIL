@@ -1,0 +1,29 @@
+# 접근 권한 명령어 (chmod)
+
+- ls -l 등의 명령어로 권한을 볼 수 있다.
+  - r: 읽기
+  - w: 쓰기
+  - x: 실행
+- 심볼릭 모드로 파일의 권한 바꾸기
+  - `chmod [who] operator [permissions] filename`
+  - who가 뜻하는 것
+    - u: 소유자의 권한
+    - g: 그룹
+    - o: 기타 사용자
+    - a: 모든 사용자
+  - operator
+    - +: 권한 더하기
+    - -: 권한 빼기
+    - =: 권한 주기(명시하지 않은 다른 권한은 모두 사라짐)
+  - permissions
+    - r: 읽기
+    - w: 쓰기
+    - x: 실행
+    - s: 유저 혹은 그룹 set-id
+    - t: sticky bit
+    - l: 파일 잠금, 다른 사용자는 파일에 접근 불가능
+- 절대 모드로 파일의 권한 바꾸기
+  - `chmod [mode] file`
+  - mode는 8진법 숫자를 의미한다.
+  - User, Group, Other 순 의미
+  - 7 7 7 시 rwxrwxrwx
