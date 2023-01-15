@@ -33,15 +33,11 @@
 -b(--backup): 대상 파일이 이미 존재할 경우 백업 파일을 만든 후 링크파일 생성
 -f(--force): 링크 파일 존재 시 삭제하고 생성
 -i(--interactive): 대상 파일이 존재할 경우 대상 파일을 지울것인지 물어봄
--d(-F, --directory):allow the superuser to attempt to hard link
-                                directories (note: will probably fail due to
-                                system restrictions, even for the superuser)
--L(--logical): dereference TARGETs that are symbolic links
--n(--no-deference): treat LINK_NAME as a normal file if
-                                it is a symbolic link to a directory
--P(--physical): make hard links directly to symbolic links
--r(--relative): create symbolic links relative to link location
--t(--target-directory): specify the DIRECTORY in which to create
-                                the links
--T(--no-target-directory=DIRECTORY): treat LINK_NAME as a normal file always
+-d(-F, --directory): 디렉터리에 대한 하드파일 링크 생성을 가능하게 한다. (단, root권한으로 수행해도 시스템의 권한 제한으로 실패할 가능성이 높다.)
+-L(--logical): 심볼릭 링크에 대한 대상 참조 해제
+-n(--no-deference): 디렉터리에 대한 심볼릭 링크의 LINK_NAME을 일반 파일로 처리
+-P(--physical): 하드링크 디렉터리를 심볼릭 링크로 만든다.
+-r(--relative): 링크 위치를 기준으로 심볼릭 링크를 생성
+-t(--target-directory): 링크에 대한 생성할 디렉토리 지정
+-T(--no-target-directory=DIRECTORY): LINK_NAME을 항상 일반 파일로 취급
 ```
