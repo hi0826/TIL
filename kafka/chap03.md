@@ -113,6 +113,11 @@
 
 ## 3.3 프로듀서의 기본 동작과 예제
 
+- 3-1 메세지 보내고 확인하지 않기 (ProducerFireForgot.java)
+- 동기 전송 (ProducerSync.java)
+- 콜백 예제 (PeterProducerCallback.java)
+- 비동기 전송 (ProducerAsync.java)
+
 ### 3.3.1 프로듀서 디자인
 
 - `Producer Record` : 데이터
@@ -220,6 +225,10 @@
   - fetch.min.bytes 보다 작을 경우 요청에 대한 응답을 기다리는 최대 시간
 
 ### 3.4.3 컨슈머 예제
+
+- 3-5 오토 커밋(ConsumerAuto.java)
+- 3-6 동기 가져오기(ConsumerSync.java)
+- 3-7 비동기 가져오기(ConsumerAsync.java)
 
 ### 3.4.4 컨슈머 그룹의 이해
 
