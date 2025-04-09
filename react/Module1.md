@@ -50,3 +50,7 @@ root.render(element);
 - createRoot 메서드를 사용하여 어플리케이션의 시작점을 지정
 - render 메서드는 react element들의 요소를 DOM 구조로 변경
 - DOM element가 생성되면, root에 추가,
+
+### Build Your Own React
+
+- 직접 리액트의 렌더링 함수 만들어보기 예제
