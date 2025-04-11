@@ -54,3 +54,20 @@ root.render(element);
 ### Build Your Own React
 
 - 직접 리액트의 렌더링 함수 만들어보기 예제
+
+## Understanding JSX
+
+- JSX를 사용하는 이유는 트리 구조를 더 보기 쉽게 함이다
+- JSX 파일에서 React를 import 하였으나 사용하지는 않는데 왜 그런지?
+  - JSX 가 JS로 컴파일 되는 과정에서 사용됨, 하지만 초보자들에겐 진입장벽이었음
+  - React 17버전부터는 자동적으로 import 되도록 변경
+
+### Expression Slots
+
+- `{}`로 표현식이나 속성추가가 가능
+- `{}`에 있는 값들은 HTML에서는 값들이 문자열이여야 하므로 리액트가 자동으로 타입을 변환
+
+### Differences from HTML
+
+- JSX와 HTML 은 겉보기엔 비슷하지만 기능적으로 다른 부분이 존재
+-
