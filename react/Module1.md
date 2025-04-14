@@ -70,4 +70,11 @@ root.render(element);
 ### Differences from HTML
 
 - JSX와 HTML 은 겉보기엔 비슷하지만 기능적으로 다른 부분이 존재
--
+
+### JSX와 Template 언어와의 비교
+
+- JSX는 얇은 추상화 계층, 템플릿 언어처럼 특이한 문법을 익히거나 하지 않아도 Javascript의 문법만 알고 있으면 사용 가능하다
+
+## Components
+
+- 유저 인터페이스의 특정 부분에 대한 마크업, 디자인, 로직 등의 동작의 묶음
