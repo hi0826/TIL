@@ -90,3 +90,13 @@ root.render(element);
 - 컴포넌트의 내부의 내용은 자동으로 children prop을 통해 전달
 - children 속성을 사용해서 지정도 가능
   - 하지만, 두가지 모두 사용했을 경우 컴포넌트 내부의 내용이 더 우선순위로 전달
+
+## Application Structure
+
+- index.js 파일에서는 글로벌 css 설정이나 로깅 파일을 가져오는 것이 좋음
+
+## Fragments
+
+- 컴포넌트에서 여러 HTML 태그를 동시에 리턴하는 것은 불가능
+- 그렇다고 div로 감싸기에는 다른 레이아웃을 깨버림
+- `<React.Fragment>`를 사용하자 `<>`단축어로 이렇게 사용
