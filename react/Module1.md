@@ -109,4 +109,47 @@ root.render(element);
   - 배열의 요소가 변화하거나 할 때 React가 어떤 요소를 변경할지 식별하는 역할
 - React element 는 key를 최상위 필드로 가지고 있음
 - key 는 props 로 보이지만, react element를 확인하는 특별한 것
--
+- key 를 사용할 때는 top-level element에 사용할 것
+- 전역적으로 unique로 관리되지 않고, 포함된 배열에서만 unique로 관리됨
+
+#### exercise
+
+```jsx
+import Avatar from './Avatar';
+
+const avatarArr = [
+  {
+    src: 'https://sandpack-bundler.vercel.app/img/avatars/001.png',
+    alt: 'person with curly hair and a black T-shirt',
+  },
+  {
+    src: 'https://sandpack-bundler.vercel.app/img/avatars/002.png',
+    alt: 'person wearing a hijab and glasses',
+  },
+  {
+    src: 'https://sandpack-bundler.vercel.app/img/avatars/003.png',
+    alt: 'person with short hair wearing a blue hoodie',
+  },
+  {
+    src: 'https://sandpack-bundler.vercel.app/img/avatars/004.png',
+    alt: 'person with a pink mohawk and a raised eyebrow',
+  },
+];
+
+function App() {
+  return (
+    <div className="avatar-set">
+      {avatarArr.map(({ src, alt }, id) => (
+        <Avatar key={id} src={src} alt={alt} />
+      ))}
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Conditional Rendering
+
+- react attribute에는 null like 한 값들은 DOM 노드에 설정되지 않음
+- react component를 만들 때, {} 사이에 표현식은 사용 가능하지만, 문장은 사용할 수 없다 `if() {...}`
