@@ -107,3 +107,6 @@ root.render(element);
 
 - 배열과 같은 엘리먼트들을 표현할 때, React가 식별할 수 있도록 고유 식별자를 줘야한다
   - 배열의 요소가 변화하거나 할 때 React가 어떤 요소를 변경할지 식별하는 역할
+- React element 는 key를 최상위 필드로 가지고 있음
+- key 는 props 로 보이지만, react element를 확인하는 특별한 것
+-
