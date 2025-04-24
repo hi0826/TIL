@@ -153,3 +153,10 @@ export default App;
 
 - react attribute에는 null like 한 값들은 DOM 노드에 설정되지 않음
 - react component를 만들 때, {} 사이에 표현식은 사용 가능하지만, 문장은 사용할 수 없다 `if() {...}`
+- &&(제어 흐름 연산)로 if 로직을 대신해서 사용 가능
+- 리액트는 0이나 ''와 같은 falsy 값을 무시 하므로 항상 boolean 타입과 사용하자
+- 삼항연산자와도 사용 가능
+
+## RangeUtility
+
+- 배열이 없는 경우에 range 메서드를 사용하자
