@@ -1,4 +1,4 @@
-## Effective Kotlin - Item 33: 세컨더리 생성자 대신 **팩터리 함수**를 고려하라
+## Effective Kotlin - Item 33: 세컨더리 생성자 대신 **팩토리 함수**를 고려하라
 
 ### 핵심 주제
 
